@@ -1,6 +1,12 @@
 ---
 layout: post
-title: Thing #2
+title: sample post
+author: sean
 ---
 
-thing #2
+{% assign author = site.data.people[page.author] %}
+<a rel="author"
+  href="https://twitter.com/{{ author.twitter }}"
+  title="{{ author.name }}">
+    {{ author.name }}
+</a>
